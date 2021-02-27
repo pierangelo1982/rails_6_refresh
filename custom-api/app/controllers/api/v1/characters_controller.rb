@@ -47,7 +47,7 @@ class Api::V1::CharactersController < ApplicationController
     private
 
     def character_params
-        params.require(:character).permit(:publisher, :name, :alias, :description, :evil)
+        params.require(:character).permit(:publisher_id, :name, :alias, :description, :evil)
     end
     
     def find_character
