@@ -34,4 +34,4 @@ rails g controller api/v1/Characters
 
 rails routes
 
-(https://medium.com/@oliver.seq/creating-a-rest-api-with-rails-2a07f548e5dc)[https://medium.com/@oliver.seq/creating-a-rest-api-with-rails-2a07f548e5dc]
+[https://medium.com/@oliver.seq/creating-a-rest-api-with-rails-2a07f548e5dc](https://medium.com/@oliver.seq/creating-a-rest-api-with-rails-2a07f548e5dc)
