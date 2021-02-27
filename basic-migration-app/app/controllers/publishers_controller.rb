@@ -1,6 +1,7 @@
 class PublishersController < ApplicationController
   before_action :set_publisher, only: %i[ show edit update destroy ]
-
+  skip_before_action :verify_authenticity_token
+  
   # GET /publishers or /publishers.json
   def index
     @publishers = Publisher.all
