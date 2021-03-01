@@ -3,7 +3,7 @@ class Api::V1::PublishersController < ApplicationController
     # GET /publishers
     def index 
         @publishers = Publisher.all
-        render json: @publishers
+        render json: @publishers, include: ['characters']
     end
 
     # GET /publushers/:id
