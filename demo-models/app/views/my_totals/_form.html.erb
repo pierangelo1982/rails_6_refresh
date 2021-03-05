@@ -1,0 +1,29 @@
+<%= form_with(model: my_total) do |form| %>
+  <% if my_total.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(my_total.errors.count, "error") %> prohibited this my_total from being saved:</h2>
+
+      <ul>
+        <% my_total.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_operator %>
+    <%= form.number_field :first_operator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :second_operator %>
+    <%= form.number_field :second_operator %>
+  </div>
+
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

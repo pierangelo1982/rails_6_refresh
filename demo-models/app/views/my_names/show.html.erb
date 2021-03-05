@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @my_name.name %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @my_name.surname %>
+</p>
+
+<p>
+<strong>Name and Surname:</strong>
+<%= @my_name.name_and_surname %>
+</p>
+
+<%= link_to 'Edit', edit_my_name_path(@my_name) %> |
+<%= link_to 'Back', my_names_path %>

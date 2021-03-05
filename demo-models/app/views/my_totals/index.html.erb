@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>My Totals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First operator</th>
+      <th>Second operator</th>
+      <th>Total</th>
+      <th>half total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @my_totals.each do |my_total| %>
+      <tr>
+        <td><%= my_total.first_operator %></td>
+        <td><%= my_total.second_operator %></td>
+        <td><%= my_total.total %></td>
+        <td><%= my_total.half_total %></td>
+        <td><%= link_to 'Show', my_total %></td>
+        <td><%= link_to 'Edit', edit_my_total_path(my_total) %></td>
+        <td><%= link_to 'Destroy', my_total, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New My Total', new_my_total_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First operator:</strong>
+  <%= @my_total.first_operator %>
+</p>
+
+<p>
+  <strong>Second operator:</strong>
+  <%= @my_total.second_operator %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @my_total.total %>
+</p>
+
+<%= link_to 'Edit', edit_my_total_path(@my_total) %> |
+<%= link_to 'Back', my_totals_path %>
